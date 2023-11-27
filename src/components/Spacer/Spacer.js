@@ -8,6 +8,7 @@ function getWidth({ axis, size }) {
 }
 
 const Spacer = styled.span`
+    flex: 1;
   display: block;
   width: ${getWidth}px;
   min-width: ${getWidth}px;

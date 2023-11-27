@@ -3,6 +3,7 @@ import styled from 'styled-components/macro';
 
 import { COLORS, WEIGHTS } from '../../constants';
 import Logo from '../Logo';
+import Spacer from '../Spacer';
 import SuperHeader from '../SuperHeader';
 
 const Header = () => {
@@ -21,17 +22,25 @@ const Header = () => {
           <NavLink href="/kids">Kids</NavLink>
           <NavLink href="/collections">Collections</NavLink>
         </Nav>
+        <Spacer />
       </MainHeader>
     </header>
   );
 };
 
 const MainHeader = styled.div`
+    display: flex;
+    gap: 32px;
   padding: 0 32px;
   border-bottom: 1px solid ${COLORS.gray[300]};
 `;
 
-const Nav = styled.nav``;
+const Nav = styled.nav`
+    justify-content: center;
+    display: flex;
+    gap: 48px;
+    flex: 1;
+`;
 
 const NavLink = styled.a`
   font-size: 1.125rem;
